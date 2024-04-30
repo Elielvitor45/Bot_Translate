@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "eozqEbdnPzkWxDL4+J6wRfPSyLi5n7+gMooy34SqdsDuoM9lQybF3KzUGjUYEeMqx8EQXauR0U9XDu5MihGOPA==",
+  "dgSpecHash": "5HcHDVsfDEwCQzQ/votqy14981O0ewy7GRS6oKQ5GADlIL+tJnGJUHHfbKgRkTNpFPbPUkFqdEoC+ZXphgUjvA==",
   "success": true,
-  "projectFilePath": "D:\\ProjetoC#\\Bots\\Bot_Translate\\Bot_Translate\\Bot_Translate.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\marcos\\Documents\\botTranslate\\Bot_Translate.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\marcos\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.18\\microsoft.netcore.app.ref.7.0.18.nupkg.sha512",
+    "C:\\Users\\marcos\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.18\\microsoft.windowsdesktop.app.ref.7.0.18.nupkg.sha512",
+    "C:\\Users\\marcos\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.18\\microsoft.aspnetcore.app.ref.7.0.18.nupkg.sha512",
+    "C:\\Users\\marcos\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.18\\microsoft.netcore.app.host.win-x64.7.0.18.nupkg.sha512"
+  ],
   "logs": []
 }

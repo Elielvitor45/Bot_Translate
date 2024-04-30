@@ -1,0 +1,15 @@
+C:\Users\marcos\Documents\botTranslate\bin\Debug\net7.0\Bot_Translate.exe
+C:\Users\marcos\Documents\botTranslate\bin\Debug\net7.0\Bot_Translate.deps.json
+C:\Users\marcos\Documents\botTranslate\bin\Debug\net7.0\Bot_Translate.runtimeconfig.json
+C:\Users\marcos\Documents\botTranslate\bin\Debug\net7.0\Bot_Translate.dll
+C:\Users\marcos\Documents\botTranslate\bin\Debug\net7.0\Bot_Translate.pdb
+C:\Users\marcos\Documents\botTranslate\obj\Debug\net7.0\Bot_Translate.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marcos\Documents\botTranslate\obj\Debug\net7.0\Bot_Translate.AssemblyInfoInputs.cache
+C:\Users\marcos\Documents\botTranslate\obj\Debug\net7.0\Bot_Translate.AssemblyInfo.cs
+C:\Users\marcos\Documents\botTranslate\obj\Debug\net7.0\Bot_Translate.csproj.CoreCompileInputs.cache
+C:\Users\marcos\Documents\botTranslate\obj\Debug\net7.0\Bot_Translate.sourcelink.json
+C:\Users\marcos\Documents\botTranslate\obj\Debug\net7.0\Bot_Translate.dll
+C:\Users\marcos\Documents\botTranslate\obj\Debug\net7.0\refint\Bot_Translate.dll
+C:\Users\marcos\Documents\botTranslate\obj\Debug\net7.0\Bot_Translate.pdb
+C:\Users\marcos\Documents\botTranslate\obj\Debug\net7.0\Bot_Translate.genruntimeconfig.cache
+C:\Users\marcos\Documents\botTranslate\obj\Debug\net7.0\ref\Bot_Translate.dll
