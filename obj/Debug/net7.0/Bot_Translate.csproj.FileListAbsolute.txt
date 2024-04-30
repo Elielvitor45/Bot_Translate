@@ -13,3 +13,10 @@ C:\Users\marcos\Documents\botTranslate\obj\Debug\net7.0\refint\Bot_Translate.dll
 C:\Users\marcos\Documents\botTranslate\obj\Debug\net7.0\Bot_Translate.pdb
 C:\Users\marcos\Documents\botTranslate\obj\Debug\net7.0\Bot_Translate.genruntimeconfig.cache
 C:\Users\marcos\Documents\botTranslate\obj\Debug\net7.0\ref\Bot_Translate.dll
+C:\Users\marcos\Documents\botTranslate\bin\Debug\net7.0\DotNetEnv.dll
+C:\Users\marcos\Documents\botTranslate\bin\Debug\net7.0\Microsoft.Extensions.Configuration.dll
+C:\Users\marcos\Documents\botTranslate\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\marcos\Documents\botTranslate\bin\Debug\net7.0\Microsoft.Extensions.Primitives.dll
+C:\Users\marcos\Documents\botTranslate\bin\Debug\net7.0\Sprache.dll
+C:\Users\marcos\Documents\botTranslate\obj\Debug\net7.0\Bot_Translate.csproj.AssemblyReference.cache
+C:\Users\marcos\Documents\botTranslate\obj\Debug\net7.0\Bot_Tran.B3608CD2.Up2Date
