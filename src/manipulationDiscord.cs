@@ -1,7 +1,12 @@
 using Discord;
 using Discord.WebSocket;
+using System;
+using System.Linq;
+using System.Threading.Tasks;
+
 public class ManipulationDiscord
 {
+    private DiscordSocketClient? _client;
 
     private string GetTokenBot()
     {
@@ -16,51 +21,53 @@ public class ManipulationDiscord
             GatewayIntents = GatewayIntents.AllUnprivileged | GatewayIntents.MessageContent
         };
 
-        var client = new DiscordSocketClient(config);
-        client.Log += LogAsync;
+        _client = new DiscordSocketClient(config);
+        _client.Log += LogAsync;
+        _client.MessageReceived += MessageReceivedAsync;
 
-        client.MessageReceived += MessageReceivedAsync;
-
-        await client.LoginAsync(TokenType.Bot, this.GetTokenBot());
-
-        Console.WriteLine(client.LoginState);
-
-        await client.StartAsync();
-
-        // client.Ready += async () =>
-        // {
-        //     var guild = client.GetGuild(1235242325500887050);
-        //     var channel = guild.GetTextChannel(1235242325500887053);
-
-        //     await channel.SendMessageAsync("Hello World");
-
-        //     await client.DisposeAsync();
-        // };
+        await _client.LoginAsync(TokenType.Bot, this.GetTokenBot());
+        await _client.StartAsync();
     }
+
     private Task LogAsync(LogMessage log)
     {
         Console.WriteLine(log);
         return Task.CompletedTask;
     }
-    private async Task MessageReceivedAsync(SocketMessage message)
-    {
-        // Verifica se a mensagem vem de um usuário
-        if (!(message is SocketUserMessage userMessage)) return;
 
+private async Task MessageReceivedAsync(SocketMessage message)
+{
+    if (!(message is SocketUserMessage userMessage)) return;
 
-        var channel = userMessage.Channel as SocketTextChannel;
-        if(channel == null) return;
-        Console.WriteLine($"Channel: {channel.Name}, Guild: {channel.Guild.Name}");
+    var channel = userMessage.Channel as SocketTextChannel;
+    if (channel == null) return;
 
-        Console.WriteLine("message.Content" + message.Content);
-        Console.WriteLine($"{userMessage.Author.Username}: {userMessage.Content}");
+    //channel = channel.Name
+    //guild = channel.Guild.Name
 
+    if(_client == null) return;
+    if (userMessage.Author.Id == _client.CurrentUser.Id) return;
 
-
-    
-    }
+    await SendMessageToChannel(channel.Guild.Name, channel.Name, "Hello world");
 }
 
+    private async Task SendMessageToChannel(string guildName, string channelName, string messageContent)
+    {
+        if(_client == null) return;
+        var guild = _client.Guilds.FirstOrDefault(g => g.Name == guildName);
 
+        if (guild == null)
+        {
+            Console.WriteLine("Servidor não encontrado.");
+            return;
+        }
 
-
+        var channel = guild.TextChannels.FirstOrDefault(c => c.Name == channelName);
+        if (channel == null)
+        {
+            Console.WriteLine("Canal não encontrado.");
+            return;
+        }
+        await channel.SendMessageAsync(messageContent);
+    }
+}
