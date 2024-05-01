@@ -1,6 +1,5 @@
 internal class connectionDiscord{
 
-    
 
     public string getToken(){
         DotNetEnv.Env.Load();
