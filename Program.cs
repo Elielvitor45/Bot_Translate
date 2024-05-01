@@ -1,4 +1,6 @@
-﻿namespace Bot_Translate
+﻿
+
+namespace Bot_Translate
 {
     internal class Program
     {
