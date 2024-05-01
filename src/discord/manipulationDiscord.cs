@@ -37,6 +37,7 @@ public class ManipulationDiscord
 
     private async Task MessageReceivedAsync(SocketMessage message)
     {
+        ApiTranslate consumerApiTranslate = new ApiTranslate();
         if (!(message is SocketUserMessage userMessage)) return;
 
         var channel = userMessage.Channel as SocketTextChannel;
@@ -44,11 +45,13 @@ public class ManipulationDiscord
 
         //channel = channel.Name
         //guild = channel.Guild.Name
+        //message user userMessage.Content 
 
         if (_client == null) return;
         if (userMessage.Author.Id == _client.CurrentUser.Id) return;
-
-        await SendMessageToChannel(channel.Guild.Name, channel.Name, "Hello world");
+        string messageTranslate = await consumerApiTranslate.TranslateText(userMessage.Content);
+        if(messageTranslate == "") return;
+        await SendMessageToChannel(channel.Guild.Name, channel.Name, messageTranslate);
     }
 
     private async Task SendMessageToChannel(string guildName, string channelName, string messageContent)
