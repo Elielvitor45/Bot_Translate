@@ -35,25 +35,25 @@ public class ManipulationDiscord
         return Task.CompletedTask;
     }
 
-private async Task MessageReceivedAsync(SocketMessage message)
-{
-    if (!(message is SocketUserMessage userMessage)) return;
+    private async Task MessageReceivedAsync(SocketMessage message)
+    {
+        if (!(message is SocketUserMessage userMessage)) return;
 
-    var channel = userMessage.Channel as SocketTextChannel;
-    if (channel == null) return;
+        var channel = userMessage.Channel as SocketTextChannel;
+        if (channel == null) return;
 
-    //channel = channel.Name
-    //guild = channel.Guild.Name
+        //channel = channel.Name
+        //guild = channel.Guild.Name
 
-    if(_client == null) return;
-    if (userMessage.Author.Id == _client.CurrentUser.Id) return;
+        if (_client == null) return;
+        if (userMessage.Author.Id == _client.CurrentUser.Id) return;
 
-    await SendMessageToChannel(channel.Guild.Name, channel.Name, "Hello world");
-}
+        await SendMessageToChannel(channel.Guild.Name, channel.Name, "Hello world");
+    }
 
     private async Task SendMessageToChannel(string guildName, string channelName, string messageContent)
     {
-        if(_client == null) return;
+        if (_client == null) return;
         var guild = _client.Guilds.FirstOrDefault(g => g.Name == guildName);
 
         if (guild == null)
