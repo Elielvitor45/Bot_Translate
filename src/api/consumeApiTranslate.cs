@@ -36,7 +36,6 @@ public class ApiTranslate
 
                 if (result is not null)
                 {
-                    Console.WriteLine("a"+result.data.translations[0].translatedText);
                     return result.data.translations[0].translatedText;
 
                 }
