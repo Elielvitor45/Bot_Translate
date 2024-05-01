@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Bot_Translate")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ba3d5307f0e3ef17c7fa7a5d5bbf4fc710a8791a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+93683aa910ea281f4972f7dc5eb2541012f090e6")]
 [assembly: System.Reflection.AssemblyProductAttribute("Bot_Translate")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Bot_Translate")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
