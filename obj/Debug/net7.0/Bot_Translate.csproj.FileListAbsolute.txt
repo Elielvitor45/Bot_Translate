@@ -41,3 +41,15 @@ D:\ProjetoC#\Bots\Bot_Translate\Bot_Translate\obj\Debug\net7.0\refint\Bot_Transl
 D:\ProjetoC#\Bots\Bot_Translate\Bot_Translate\obj\Debug\net7.0\Bot_Translate.pdb
 D:\ProjetoC#\Bots\Bot_Translate\Bot_Translate\obj\Debug\net7.0\Bot_Translate.genruntimeconfig.cache
 D:\ProjetoC#\Bots\Bot_Translate\Bot_Translate\obj\Debug\net7.0\ref\Bot_Translate.dll
+C:\Users\marcos\Documents\botTranslate\bin\Debug\net7.0\Discord.Net.Commands.dll
+C:\Users\marcos\Documents\botTranslate\bin\Debug\net7.0\Discord.Net.Core.dll
+C:\Users\marcos\Documents\botTranslate\bin\Debug\net7.0\Discord.Net.Interactions.dll
+C:\Users\marcos\Documents\botTranslate\bin\Debug\net7.0\Discord.Net.Rest.dll
+C:\Users\marcos\Documents\botTranslate\bin\Debug\net7.0\Discord.Net.Webhook.dll
+C:\Users\marcos\Documents\botTranslate\bin\Debug\net7.0\Discord.Net.WebSocket.dll
+C:\Users\marcos\Documents\botTranslate\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\marcos\Documents\botTranslate\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\marcos\Documents\botTranslate\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\marcos\Documents\botTranslate\bin\Debug\net7.0\System.Interactive.Async.dll
+C:\Users\marcos\Documents\botTranslate\bin\Debug\net7.0\System.Linq.Async.dll
+C:\Users\marcos\Documents\botTranslate\bin\Debug\net7.0\System.Reactive.dll
